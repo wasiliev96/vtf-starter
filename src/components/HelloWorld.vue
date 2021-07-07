@@ -27,9 +27,10 @@ function increment() {
 }
 </script>
 <style lang="postcss">
-.container{
-  & .title{
-    color: red;
-  }
+@custom-selector :--test .container .title;
+:--test{
+  --red: red;
+    color: var(--red);
+    box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);
 }
 </style>
