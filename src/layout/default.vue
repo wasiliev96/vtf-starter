@@ -1,18 +1,19 @@
 <template>
-  <div class="text-center">Default layout</div>
-  <div class="nav border-b flex gap-2 p-2">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <default-header />
   <slot />
+  <default-footer />
 </template>
 
 <script lang="ts">
+import DefaultFooter from '@/components/layout/default/DefaultFooter.vue'
+import DefaultHeader from '@/components/layout/default/DefaultHeader.vue'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'DefaultTemplate',
+  components: {
+    DefaultHeader,
+    DefaultFooter,
+  },
 })
 </script>
-
-<style lang="postcss" scoped></style>
