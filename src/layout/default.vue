@@ -1,7 +1,9 @@
 <template>
-  <default-header />
-  <slot />
-  <default-footer />
+  <div class="layout">
+    <default-header />
+    <slot />
+    <default-footer />
+  </div>
 </template>
 
 <script lang="ts">
