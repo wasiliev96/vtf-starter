@@ -1,5 +1,5 @@
 <template>
-  <nav class="border p-3">
+  <nav class="p-3">
     <ul class="flex gap-2">
       <li>
         <router-link class="border-r py-2 pl-2 pr-4 text-center" to="/">Home</router-link>
