@@ -10,27 +10,29 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { computed } from 'vue'
-
+<script lang="ts">
+import { defineComponent, computed } from 'vue'
 import { useStore, Mutation } from '@/store/index'
 
-const store = useStore()
-const appVersion = store.state.version // not reactive!
-const count = computed(() => store.state.count)
-const props = defineProps<{
-  msg: string
-}>()
-
-function increment() {
-  store.commit(Mutation.INCREMENT, 1)
-}
+export default defineComponent({
+  name: 'HelloWorld',
+  components: {},
+  props: {
+    msg: String,
+  },
+  setup() {
+    const store = useStore()
+    const appVersion = store.state.version
+    const count = computed(() => store.state.count)
+    const increment = () => {
+      store.commit(Mutation.INCREMENT, 1)
+    }
+    return {
+      store,
+      appVersion,
+      count,
+      increment,
+    }
+  },
+})
 </script>
-<style lang="postcss">
-@custom-selector :--test .container .title;
-:--test{
-  --red: red;
-    color: var(--red);
-    box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);
-}
-</style>
