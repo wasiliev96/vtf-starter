@@ -1,7 +1,9 @@
 <template>
   <div class="layout flex flex-col h-full">
     <default-header />
-    <slot />
+    <main class="flex-grow">
+      <slot />
+    </main>
     <default-footer />
   </div>
 </template>
