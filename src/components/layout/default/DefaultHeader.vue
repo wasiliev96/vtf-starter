@@ -1,7 +1,7 @@
 <template>
   <header class="flex justify-between">
     <div class="header-branding">
-      <h1 class="text-center">This is default header</h1>
+      <h1 class="text-center leading-3">This is default header</h1>
     </div>
     <div class="header-nav flex items-center">
       <main-navigation />
