@@ -1,5 +1,5 @@
 <template>
-  <div class="justify-center flex-1 container mx-auto">
+  <div class="justify-center flex-1 container p-3 mx-auto">
     <component :is="this.$route.meta.layout || 'div'">
       <router-view v-slot="{ Component }">
         <transition name="component-fade" mode="out-in">
