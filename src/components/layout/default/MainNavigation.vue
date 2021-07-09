@@ -25,11 +25,11 @@
       "
     >
       <ul class="flex flex-col gap-2">
-        <li class="px-4 py-2 leading-5 text-gray-700">
-          <router-link class="" to="/">Home</router-link>
+        <li>
+          <router-link class="px-4 py-2 leading-5 text-gray-700" to="/">Home</router-link>
         </li>
-        <li class="px-4 py-2 leading-5 text-gray-700">
-          <router-link class="" to="/about">About</router-link>
+        <li>
+          <router-link class="px-4 py-2 leading-5 text-gray-700" to="/about">About</router-link>
         </li>
       </ul>
     </nav>
