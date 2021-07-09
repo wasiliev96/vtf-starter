@@ -12,8 +12,7 @@
   </header>
 </template>
 
-<script lang="ts">
-//@ts-ignore //todo: fix it
+<script>
 import { DotsVerticalIcon } from '@heroicons/vue/outline'
 import { defineComponent } from 'vue'
 import MainNavigation from './MainNavigation.vue'
