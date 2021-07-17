@@ -6,6 +6,7 @@
     </button>
 
     <nav
+      @click='isMenuActive = false'
       class='
         transition-all
         ease-in-out
