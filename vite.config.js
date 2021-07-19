@@ -4,7 +4,11 @@ import vue from '@vitejs/plugin-vue'
 import pkg from './package.json'
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue({
+    script: {
+      refSugar: true
+    }
+  })],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

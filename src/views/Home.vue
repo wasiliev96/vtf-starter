@@ -1,7 +1,7 @@
-<template>
-  <h1>This is home page</h1>
+<template lang="pug">
+h1 This is home page
 </template>
 
-<script setup></script>
+<script setup lang='ts'></script>
 
 <style lang="scss" scoped></style>
