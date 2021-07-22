@@ -8,6 +8,7 @@ See [changelog](./CHANGES.md) for latest changes.
 
 - Vue 3
 - Vuex 4 store (fully typed)
+- Firebase auth
 - TypeScript
 - Tailwind CSS w/ JIT compiler + following plugins preinstalled
   - `@tailwindcss/aspect-ratio`
