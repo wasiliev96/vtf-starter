@@ -1,4 +1,4 @@
-# Vite Typescript + Tailwind Starter
+# (V)ite + Vue 3 + (T)ypescript + Tailwind + (F)irebase Starter
 
 Simple, opinionated, and **production-ready** project template for Vite.
 
